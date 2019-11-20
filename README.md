@@ -2,18 +2,15 @@
 
 Powershell Profile that prettifies your prompt, creates some helpful aliases (including a unix-like "which"!), and starts the ssh-agent to handle your private keys.
 
-### Prerequisites
-
+## Prerequisites
 
 git for windows `(choco install git.install)`  
 PSColor powershell module `(Install-Module PSColor)`
 
-
-### Installing
+## Installing
 
 Clone the repo
 `git clone https://github.com/madmatt112/PSProfile.git`
-
 
 ## Built With
 
