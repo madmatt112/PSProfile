@@ -22,7 +22,7 @@ Submit a PR if you want to add something.
 
 ## Authors
 
-* **vhanla** - *Initial work* [Github Profile](https://github.com/vhanla)
+* **vhanla** - *Initial work* - [Github Profile](https://github.com/vhanla)
 * **Matthew Field** - *Tweaks* - [Github Profile](https://github.com/madmatt112)
 
 ## License
