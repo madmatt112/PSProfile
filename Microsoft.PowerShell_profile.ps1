@@ -123,9 +123,9 @@ function Prompt {
 
 }
 
-Set-Alias kc 'kubectl'
-Set-Alias ks 'kube-shell'
-
 function which {
 	Get-Command $args -ErrorAction Ignore | Select-Object -ExpandProperty Definition
 }
+
+Set-Alias kc 'kubectl'
+Set-Alias ks 'kube-shell'

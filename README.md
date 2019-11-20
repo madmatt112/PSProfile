@@ -2,17 +2,11 @@
 
 Powershell Profile that prettifies your prompt, creates some helpful aliases (including a unix-like "which"!), and starts the ssh-agent to handle your private keys.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Prerequisites
 
-What things you need to install the software and how to install them
 
-
-git for windows `(choco install git.install)`
-PSColor module `(Install-Module PSColor)`
+git for windows `(choco install git.install)`  
+PSColor powershell module `(Install-Module PSColor)`
 
 
 ### Installing
