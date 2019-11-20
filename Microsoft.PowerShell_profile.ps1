@@ -1,7 +1,5 @@
 #Author: vhanla + Matthew Field
 #Force coloring of git and npm commands
-#$env:TERM = 'cygwin'
-#$env:TERM = 'FRSX'
 
 $global:foregroundColor = 'white'
 $time = Get-Date
@@ -126,6 +124,7 @@ function Prompt {
 }
 
 Set-Alias kc 'kubectl'
+Set-Alias ks 'kube-shell'
 
 function which {
 	Get-Command $args -ErrorAction Ignore | Select-Object -ExpandProperty Definition
