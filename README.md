@@ -9,8 +9,18 @@ PSColor powershell module `(Install-Module PSColor)`
 
 ## Installing
 
-Clone the repo
-`git clone https://github.com/madmatt112/PSProfile.git`
+Clone the repo 
+
+```
+git clone https://github.com/madmatt112/PSProfile.git
+```
+
+Overwrite your existing PowerShell profile (use -Append to append to current profile. May cause problems without manual checks.)
+
+```
+cd PSProfile
+Get-Content Microsoft_PowerShell_profile.ps1 | Out-File [-Append] $profile
+```
 
 ## Built With
 
