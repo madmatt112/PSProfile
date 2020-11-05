@@ -24,12 +24,7 @@ Write-Host "Welcome to PowerShell version: $psVersion" -foregroundColor Green
 Write-Host "I am: $curComp" -foregroundColor Green
 Write-Host
 
-try {
-	Set-Location C:\dev
-}
-catch {
-	Set-Location Z:\dev
-}
+Set-Location X:\dev
 
 # Create home alias to folder in which shell was started
 $_home = PWD
@@ -125,6 +120,10 @@ function Prompt {
 
 function which {
 	Get-Command $args -ErrorAction Ignore | Select-Object -ExpandProperty Definition
+}
+
+function Push-LaunchpadFromSandbox {
+	git checkout dev && git merge sandbox && git push && git checkout test && git merge dev && git push && git checkout master && git merge test && git push
 }
 
 Set-Alias kc 'kubectl'
