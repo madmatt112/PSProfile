@@ -22,6 +22,7 @@ Write-Host "Hello, $curUser! " -foregroundColor $foregroundColor -NoNewLine; Wri
 Write-Host "Today is: $($time.ToLongDateString())"
 Write-Host "Welcome to PowerShell version: $psVersion" -foregroundColor Green
 Write-Host "I am: $curComp" -foregroundColor Green
+Write-Host "Your aliases:`ngoHome`ngoUserHome`nplfs" 
 Write-Host
 
 Set-Location X:\dev
@@ -95,7 +96,7 @@ function Prompt {
 	$relativePath = relativePathToHome
 
 	# Write-Host -NoNewLine (" PS$psVersion " -f (Get-Date)) -foregroundColor $prompt_time_text -backgroundColor $prompt_time_background
-	Write-Host -NoNewLine (" {0:HH}:{0:mm}:{0:ss} " -f (Get-Date)) -foregroundColor $prompt_time_text -backgroundColor $prompt_time_background
+	Write-Host -NoNewLine (" {0:HH}:{0:mm} " -f (Get-Date)) -foregroundColor $prompt_time_text -backgroundColor $prompt_time_background
 	#Write-Host -NoNewLine "$([char]57520)" -foregroundColor $prompt_time_background -backgroundColor $prompt_background
 	# Write-Host " $path " -foregroundColor $prompt_text -backgroundColor $prompt_background -NoNewLine
 	Write-Host " $relativePath " -foregroundColor $prompt_text -backgroundColor $prompt_background -NoNewLine
@@ -128,3 +129,4 @@ function Push-LaunchpadFromSandbox {
 
 Set-Alias kc 'kubectl'
 Set-Alias ks 'kube-shell'
+Set-Alias plfs "Push-LaunchpadFromSandbox"
